@@ -90,6 +90,7 @@ MIDDLEWARE_CLASSES = (
     'djangotoolbox.middleware.RedirectMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
     'urlrouter.middleware.URLRouterFallbackMiddleware',
 )
 
@@ -138,6 +139,7 @@ GLOBAL_MEDIA_DIRS = (
 )
 
 ADMIN_MEDIA_PREFIX = '/media/admin/'
+STATIC_URL = '/static/'
 
 ROOT_URLCONF = 'urls'
 
